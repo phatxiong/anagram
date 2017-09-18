@@ -10,10 +10,16 @@ html, body {
 	height: 300px;
 	position: relative;
 	left: 50%;
-	top: 48%;
-	margin-top: -100px;
-	margin-left: -100px;
+	margin-left: -150px;
 
+}
+
+#bear {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	left: 100%;
+	top: 100%
 }
 
 .text {
@@ -23,14 +29,49 @@ html, body {
 	margin-left: 10px;
 }
 
+@-webkit-keyframes b_move {
+	0%, 100% { top: 0px; left: 0px; }
+	50% { top: 50px; left: 0px; }
+}
+
+#b {
+	position: relative;
+	-webkit-animation: b_move 4s infinite ease;
+}
+
 @-webkit-keyframes e_move {
 	0% { top: 0px; left: 0px; }
 	25% { top: 50px; left: 0px; }
 	50% { top: 50px, left: -150px; }
-	100% { top: 50px; left: -80px; }
+	75% { top: 50px; left: -82px; }
+
 }
 
 #e {
 	position: relative;
 	-webkit-animation: e_move 3s infinite ease;
+}
+
+@-webkit-keyframes a_move {
+	0% { top: 0px; left: 0px; }
+	25% { top: -50px; left: 0px; }
+	50% { top: -50px; left: 80px;}
+	75% { top: 50px; left: 50px; }
+	100% { top: 50px; left: 50px; }
+}
+
+#a {
+	position: relative;
+	-webkit-animation: a_move 3s infinite ease;
+}
+
+@-webkit-keyframes r_move {
+	0%, 100% { top: 0px; left: 0px; }
+	50% { top: 0px; left: 50px; }
+	75% { top: 50px; left: 50px; }
+}
+
+#r {
+	position: relative;
+	-webkit-animation: r_move 3s infinite ease;
 }
